@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "module": "CommonJS",
+      "moduleResolution": "node",
+      "target": "ESNext",       // Ensures compatibility with the latest ECMAScript features
+      "esModuleInterop": true,  // Helps with `import` compatibility with CommonJS
+      "allowSyntheticDefaultImports": true  // Allows default imports from modules with no default export
+    }
+  }
