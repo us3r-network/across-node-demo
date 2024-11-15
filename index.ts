@@ -10,13 +10,13 @@ export const account = privateKeyToAccount('xxx')
 async function main() {
     const publicClient = createPublicClient({
         chain: baseSepolia,
-        transport: http('https://base-sepolia.g.alchemy.com/v2/mwGPVe9op8x1I6WTVgDo2qjRbbEmQbSV'), // Replace with your provider's URL
+        transport: http(), // Replace with your provider's URL
     });
 
     const walletClient = createWalletClient({
         chain: baseSepolia,
         account,
-        transport: http('https://base-sepolia.g.alchemy.com/v2/mwGPVe9op8x1I6WTVgDo2qjRbbEmQbSV'), // Replace with your provider's URL
+        transport: http(), // Replace with your provider's URL
     });
 
     const buyer = '0xc6f66f5A51EF56A1D511210686769bcc7204Cc3D';
